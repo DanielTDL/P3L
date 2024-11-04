@@ -28,10 +28,10 @@
           <img src="/src/img/favicon2-64.png" alt="" />
         </a>
         <ul>
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#">Tentang Kami</a></li>
-          <li><a href="#">Produk & Servis</a></li>
-          <li><a href="#">Hubungi</a></li>
+          <li><a href="#home" class="nav-link">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+          <li><a href="#produk" class="nav-link">Produk & Service</a></li>
+          <li><a href="#contact" class="nav-link">Hubungi</a></li>
         </ul>
       </nav>
     </header>
@@ -82,8 +82,44 @@
         </div>
       </section>
     </main>
-    <footer>
-      <a href=""><img src="/src/img/favicon2-64.png" alt=""></a>
+    <footer id="contact">
+      <div class="container-form">
+        <h3>Message Us</h3>
+        <form action="">
+          <ul>
+            <li id="name-input">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </li>
+            <li>
+              <input type="email" placeholder="example@mail.com" />
+            </li>
+            <li id="message">
+              <input type="text" placeholder="Your Message" style="height: 6rem; border-radius: 5px; outline: none; border: none" />
+            </li>
+            <li id="button-container">
+              <button type="submit">SEND</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="container-contact">
+        <ul>
+          <li>
+            <label>Call Us</label>
+            <p>+62812-8538-8206</p>
+          </li>
+          <li>
+            <label>Email Us</label>
+            <p>ruangkreasiswaradhika@gmail.com</p>
+          </li>
+          <li>
+            <label>Visit Us</label>
+            <p>Perumahan Telaga Mas Blok L No.7</p>
+          </li>
+        </ul>
+      </div>
     </footer>
+    <script src="/src/script/script.js"></script>
   </body>
 </html>

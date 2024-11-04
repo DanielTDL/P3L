@@ -4,17 +4,27 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
 header {
-  border: 1px solid;
   width: 100vw;
   padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* border: 1px solid; */
 }
 
 header nav {
@@ -23,7 +33,7 @@ header nav {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 header nav ul {
@@ -32,16 +42,22 @@ header nav ul {
   align-items: center;
   width: 30%;
   list-style-type: none;
-  border: 1px solid;
+  padding-right: 20px;
+  /* border: 1px solid; */
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: #000080;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 black, /* Bayangan di kiri atas */ 1px -1px 0 black, /* Bayangan di kanan atas */ -1px 1px 0 black, /* Bayangan di kiri bawah */ 1px 1px 0 black; /* Bayangan di kanan bawah */
 }
 
-body {
-  border: 1px solid;
+header nav ul li a:active {
+  color: blue;
+}
+
+header nav ul li a.clicked {
+  color: blue;
 }
 
 body section#home {
@@ -67,7 +83,7 @@ body section#about {
 
 body section#about .text-content-about {
   width: 60%;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 
 body section#produk {
@@ -84,7 +100,7 @@ body section#produk ul {
   justify-content: space-around;
   padding: 10px;
   list-style-type: none;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 body section#produk ul li {
@@ -103,7 +119,7 @@ body section#produk ul li .card-produk {
   gap: 1rem;
   flex-direction: column;
   padding: 2rem;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 body section#produk .content-produk h2,
@@ -113,4 +129,92 @@ body section#produk .content-produk p {
 
 .selector-for-some-widget {
   box-sizing: content-box;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2rem;
+  background-color: #000080;
+}
+
+footer .container-form {
+  width: 50%;
+  padding: 10px;
+  /* border: 1px solid; */
+}
+
+footer .container-form h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+footer .container-form form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .container-form form ul li#name-input {
+  padding-left: 20px;
+  width: 90%;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .container-form form ul li#name-input input {
+  width: 48%;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .container-form form ul li {
+  padding: 1px;
+  width: 90%;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+footer .container-form form ul li input {
+  width: 97%;
+  text-align: center;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .container-form form ul li#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer .container-contact {
+  width: 50%;
+  /* border: 1px solid #ff0000; */
+}
+
+footer .container-contact ul {
+  list-style-type: none;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+footer .container-contact ul li {
+  padding-bottom: 1rem;
+}
+
+footer .container-contact ul li label {
+  font-size: 18px;
+}
+
+footer .container-contact ul li p {
+  font-size: 24px;
 }
