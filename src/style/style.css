@@ -59,7 +59,7 @@ header nav ul li a.clicked {
 }
 
 body section#home {
-  background-image: url("/src/img/server.jpg");
+  background-image: url("./src/img/server.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
