@@ -59,7 +59,7 @@ header nav ul li a.clicked {
 }
 
 body section#home {
-  background-image: url("https://github.com/DanielTDL/P3L/blob/main/src/img/server.jpg");
+  background-image: url("./src/img/chilled.png");
   height: 100vh;
   background-position: center;
   background-size: cover;
