@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/src/style/style.css" />
     <!-- style css -->
     <!-- icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=public" />
+    <script src="https://kit.fontawesome.com/1fb7bc7f11.js" crossorigin="anonymous"></script>
     <!-- icon -->
   </head>
   <body>
@@ -38,43 +38,65 @@
     <main>
       <section id="home">
         <div class="text-content-home">
-          <h1>PT. RUANG KREASI SWARA DHIKA</h1>
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, eligendi.</h4>
+          <h1 id="company-name">PT. RUANG KREASI SWARA DHIKA</h1>
+          <h4 id="company-info">COMPANY PROFILE</h4>
+          <p>Perusahaan yang berfokus pada pengembangan solusi di bidang teknologi informasi</p>
         </div>
       </section>
       <section id="about">
+        <div class="company-logo">
+          <img src="/src/img/logo.png" alt="logo" />
+        </div>
         <div class="text-content-about">
-          <h2>Tentang Kami</h2>
+          <h1>Tentang Kami</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit officia incidunt et, corporis ratione itaque dolore accusantium esse recusandae. Consequatur nisi labore laudantium! Corporis?
+            PT. Ruang Kreasi Swara Dhika adalah perusahaan yang berfokus pada pengembangan solusi di bidang teknologi informasi. Kami menawarkan layanan yang beragam dan inovatif untuk mendukung kebutuhan
+            teknologi bagi bisnis dari berbagai sektor, khususnya UKM. Dengan pengalaman kami dalam menciptakan berbagai solusi teknologi, kami bertujuan untuk membantu perusahaan mengoptimalkan operasional,
+            meningkatkan efisiensi, dan meraih kesuksesan melalui penerapan teknologi yang tepat guna
           </p>
         </div>
       </section>
       <section id="produk">
         <div class="content-produk">
-          <h2>Produk & Service</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <div class="h2-p">
+            <h2 id="produk-judul">Produk & Service</h2>
+            <p id="layanan-judul">Layanan Yang Kami Tawarkan</p>
+          </div>
           <div class="produk-list">
             <ul>
               <li>
                 <div class="card-produk">
-                  <span class="material-symbols-outlined"> public </span>
-                  <h3>hosting</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, magnam.</p>
+                  <i class="fa-solid fa-cloud-arrow-up fa-2xl"></i>
+                  <h3>Cloud Service</h3>
+                  <p>Layanan cloud meliputi hosting, app run, dan cloud engine.</p>
                 </div>
               </li>
               <li>
                 <div class="card-produk">
-                  <span class="material-symbols-outlined"> public </span>
-                  <h3>hosting</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, magnam.</p>
+                  <i class="fa-solid fa-laptop-code fa-2xl"></i>
+                  <h3>Website</h3>
+                  <p>Pembuatan aplikasi berbasis Website skala kecil dan industri.</p>
                 </div>
               </li>
               <li>
                 <div class="card-produk">
-                  <span class="material-symbols-outlined"> public </span>
-                  <h3>hosting</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, magnam.</p>
+                  <i class="fa-solid fa-mobile-screen fa-2xl"></i>
+                  <h3>Mobile App</h3>
+                  <p>Pembuatan aplikasi berbasis perangkat mobile Android skala menengah.</p>
+                </div>
+              </li>
+              <li>
+                <div class="card-produk">
+                  <i class="fa-solid fa-desktop fa-2xl"></i>
+                  <h3>Desktop App</h3>
+                  <p>Pembuatan aplikasi berbasis Desktop skala kecil dan industri</p>
+                </div>
+              </li>
+              <li>
+                <div class="card-produk">
+                  <i class="fa-solid fa-user-tie fa-2xl"></i>
+                  <h3>IT Consultant</h3>
+                  <p>Layanan konsultasi seputar teknologi informasi skala kecil dan menengah</p>
                 </div>
               </li>
             </ul>
@@ -107,7 +129,7 @@
         <ul>
           <li>
             <label>Call Us</label>
-            <p>+62812-8538-8206</p>
+            <p>+62 812-8538-8206</p>
           </li>
           <li>
             <label>Email Us</label>
